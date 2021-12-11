@@ -1,0 +1,11 @@
+node_modules
+
+/.cache
+/build
+/dist
+/public/build
+
+.mf
+.shadow-cljs/
+shadow-app/*
+!shadow-app/*.js*

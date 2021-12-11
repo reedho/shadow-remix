@@ -1,0 +1,21 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["cljs"]
+
+ :dependencies
+ [[applied-science/js-interop "0.3.1"]
+  [hicada/hicada "0.1.9"]
+
+  [cider/cider-nrepl "0.27.2"]
+  [cider/piggieback "0.5.3"]]
+
+ :builds {:rmx {:target     :esm
+                :output-dir "shadow-app/routes"
+                :js-options {:js-provider :import}
+                :modules    {:shared {}
+                             :index  {:exports    {loader  gemini.index/loader
+                                                   meta    gemini.index/meta
+                                                   default gemini.index/Index}
+                                      :depends-on #{:shared}}}}}
+
+ }

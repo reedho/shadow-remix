@@ -24,7 +24,8 @@
     "@remix-run/dev": "^1.0.6",
     "esbuild": "0.13.14",
     "miniflare": "2.0.0-next.3",
-    "shadow-cljs": "^2.16.8"
+    "shadow-cljs": "^2.16.8",
+    "snowpack": "^3.8.8"
   },
   "engines": {
     "node": ">=14"

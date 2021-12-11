@@ -7,5 +7,9 @@ node_modules
 
 .mf
 .shadow-cljs/
+.cider-repl-history
 shadow-app/*
 !shadow-app/*.js*
+shadow-public/js/
+
+.log
